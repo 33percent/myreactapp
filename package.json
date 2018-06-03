@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server public/",
-    "build": "webpack --watch",
+    "build": "webpack",
+    "dev-server":"webpack-dev-server",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
   },
   "keywords": [
@@ -27,7 +28,8 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "validator": "^10.2.0",
-    "webpack": "^4.10.2"
+    "webpack": "^4.10.2",
+    "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
